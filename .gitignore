@@ -1,5 +1,2 @@
-# POC
-POC/venv
-
-# IDE
-*.code-workspace
+# Clangd
+.cache

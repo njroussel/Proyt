@@ -25,4 +25,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_executable(proyt src/main.cpp)
+add_executable(proyt src/main.cpp src/lexer.cpp)

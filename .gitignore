@@ -1,2 +1,5 @@
 # Clangd
 .cache
+
+# Build
+build

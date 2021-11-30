@@ -1,7 +1,7 @@
 # ninja log v5
-1	528	1638223235023081053	CMakeFiles/proyt.dir/src/main.cpp.o	1c9ed6eb1ed5d5d7
-517	590	1638223274546646466	proyt	30cf2a0b073d44f6
-1	517	1638223274473312698	CMakeFiles/proyt.dir/src/lexer.cpp.o	8b51cbf383593cdd
 0	520	1638223669035794389	CMakeFiles/proyt.dir/src/main.cpp.o	1c9ed6eb1ed5d5d7
-1	532	1638223669045794454	CMakeFiles/proyt.dir/src/lexer.cpp.o	8b51cbf383593cdd
 532	607	1638223669125794980	proyt	30cf2a0b073d44f6
+1	532	1638223669045794454	CMakeFiles/proyt.dir/src/lexer.cpp.o	8b51cbf383593cdd
+0	909	1638274412886223809	CMakeFiles/proyt.dir/src/main.cpp.o	1c9ed6eb1ed5d5d7
+1	2971	1638274414949572670	CMakeFiles/proyt.dir/src/lexer.cpp.o	8b51cbf383593cdd
+2971	3058	1638274415042906706	proyt	30cf2a0b073d44f6

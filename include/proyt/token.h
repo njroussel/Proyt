@@ -1,5 +1,6 @@
 #include <array>
 #include <regex>
+
 /**
  * @brief Holds all possible token values
  */
@@ -23,7 +24,7 @@ enum Token {
   MULTIPLY_SIGN
 };
 
-const std::array<Token, 12> ALL_TOKENS = {
+const std::array<Token, 12> ORDERED_TOKENS = {
     END_OF_FILE,       END_OF_EXPRESSION, OPEN_CURLY_BRACE,
     CLOSE_CURLY_BRACE, DEFINITION,        IMPORT,
     IDENTIFIER,        LITERAL,           RETURN,
@@ -34,28 +35,28 @@ constexpr const char* regexStr(Token token) {
     case END_OF_FILE:
       return "\\s*$";
     case END_OF_EXPRESSION:
-      return "\\s*return.*$";
+      return "\\s*\\;";
     case OPEN_CURLY_BRACE:
-      return "\\s*\\{.*$";
+      return "\\s*\\{";
     case CLOSE_CURLY_BRACE:
-      return "\\s*\\}.*$";
+      return "\\s*\\}";
     case DEFINITION:
-      return "\\s*def\\s.*$";
+      return "\\s*def\\s";
     case IMPORT:
-      return "\\s*import\\s.*$";
+      return "\\s*import\\s";
     case IDENTIFIER:
-      return "\\s*\\d.*$";
+      return "\\s*[a-zA-Z][a-zA-Z0-9]*";
     case LITERAL:
-      return "\\s*\\d.*$";
+      return "\\s*\\d+.?\\d*";
     case RETURN:
-      return "\\s*return{1}.*$";
+      return "\\s*return";
     case EQUAL_SIGN:
-      return "\\s*\\={1}.*$";
+      return "\\s*\\=";
     case PLUS_SIGN:
-      return "\\s*\\+{1}.*$";
+      return "\\s*\\+";
     case MULTIPLY_SIGN:
-      return "\\s*\\*{1}.*$";
+      return "\\s*\\*";
     default:
       return "";
   }
-}
+};

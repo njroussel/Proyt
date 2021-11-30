@@ -34,7 +34,7 @@ Token Lexer::nextToken(const std::string& tokenStr, bool& valid) {
     return END_OF_FILE;
   }
 
-  for (const Token& token : ALL_TOKENS) {
+  for (const Token& token : ORDERED_TOKENS) {
     std::regex tokenRegex(regexStr(token));
   }
 

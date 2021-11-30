@@ -1,5 +1,5 @@
 # Clangd
-.cache
+.cache/
 
 # Build
 build/
